@@ -1,6 +1,7 @@
 import React from 'react'
 import BackgroundImage from '../../assets/svg/bgLawyerSection.svg'
 import FgImage from '../../assets/svg/fgLawyerSection.svg'
+import Lawer from '../../assets/svg/lawyers.png'
 import Button from './Button'
 import ChatNowSvg from 'app/assets/svg/chatNow.svg'
 // import CallSvg from 'app/assets/svg/call.svg'
@@ -24,7 +25,7 @@ const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
         </div>
         <object className="absolute bottom-0 right-6 sm:right-12 md:right-16 lg:right-24 xl:right-28">
           <img
-            src={'lawyers.png'}
+            src={Lawer}
             alt="Lawyers"
             className="h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px] xl:h-[530px] xl:w-[555px]"
           />
