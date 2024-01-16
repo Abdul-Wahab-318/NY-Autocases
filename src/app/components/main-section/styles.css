@@ -1,0 +1,32 @@
+.banner-title {
+  color: #fbfcfe;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.banner-text {
+  display: block;
+  color: #fbfcfe;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-bg-wallpaper {
+  background-image: url('../../assets/svg/bg-wallpaper.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  z-index: 999999;
+}
+
+.nav-button-sm {
+  color: white;
+  font-family: Avenir Next Condensed;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: flex-start;
+}

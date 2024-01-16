@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./assets/fonts/Avenir.otf);
+}
+
+@font-face {
+  font-family: Avenir-bold;
+  src: url(./assets/fonts/Avenir-Next-Condensed.otf);
+}
+
+@font-face {
+  font-family: Avenir Next;
+  src: url(./assets/fonts/Avenir-Next.otf);
+}

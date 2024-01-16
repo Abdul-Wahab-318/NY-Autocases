@@ -1,0 +1,30 @@
+.container2 {
+  background-image: url('../../assets/svg/modalBackground.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.modal-case-type {
+  color: #5e5e5e;
+  font-family: Avenir Next;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card-textarea {
+  border: 1px solid #ccc; /* Set your desired border color */
+  border-radius: 4px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Set your desired box shadow */
+  padding: 8px; /* Adjust padding as needed */
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #252424cc;
+  height: 100%;
+  width: 100vw;
+}

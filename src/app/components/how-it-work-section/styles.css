@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  width: '100%';
+  flex-direction: column;
+  align-items: flex-start;
+  height: 180px;
+  justify-content: flex-start;
+}
+
+.section-title {
+  color: #2b84de;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section-number {
+  color: #2b84de;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+
+.section-text {
+  color: #2782dd;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

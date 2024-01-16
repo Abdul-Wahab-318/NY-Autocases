@@ -1,0 +1,37 @@
+.lawyer-section-title {
+  color: #2b84de;
+  font-family: Avenir Next;
+  font-size: 56.501px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.button-text {
+  color: #fff;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.button-text-container {
+  width: 316.899px;
+  height: 63.315px;
+  flex-shrink: 0;
+}
+
+.lawyer-text {
+  color: #2b84de;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.my-image {
+  background-image: url('../../assets/svg/lawyers.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  z-index: 999999;
+}
