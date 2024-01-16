@@ -25,19 +25,19 @@ const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
           <img
             src={'/lawyers.png'}
             alt="Lawyers"
-            className="h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px] xl:h-[530px] xl:w-[555px]"
+            className="h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px] xl:h-[530px] xl:w-[555px]"
           />
           {/* <LawyersSvg /> */}
         </object>
 
-        <div className="lawyer-section-title absolute left-12  top-6 sm:top-[30px] md:top-[64px] lg:top-[100px] xl:top-[180px]">
+        <div className="lawyer-section-title absolute left-8  top-6 sm:top-[30px] md:top-[64px] lg:top-[100px] xl:top-[180px]">
           {/* className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl" */}
           <text className="lawyer-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-[56px]">
             Connect to a lawyer
           </text>
         </div>
 
-        <div className="absolute left-10 top-28 grid gap-y-8 sm:left-10 sm:top-36 md:top-[220px] lg:top-[280px] xl:top-[300px]">
+        <div className="absolute left-7 top-24 grid gap-y-8 sm:left-10 sm:top-36 md:top-[220px] lg:top-[280px] xl:top-[300px]">
           <Button
             text="START CHATTING"
             icon={ChatNowSvg}
