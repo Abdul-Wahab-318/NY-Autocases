@@ -9,6 +9,7 @@ import './styles.css'
 
 interface ConnectToLawyerSectionProps {
   openFormModal: () => void
+ 
 }
 
 const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
@@ -41,7 +42,7 @@ const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
           <Button
             text="START CHATTING"
             icon={ChatNowSvg}
-            onClick={openFormModal}
+            onClick={ openFormModal}
           />
           {/* <Button
             text="+1 111 222 4333"

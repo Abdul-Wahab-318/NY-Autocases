@@ -7,6 +7,7 @@ import AreasSection from 'app/components/areas-section'
 import Footer from 'app/components/footer'
 import { useState } from 'react'
 import FreeConsultationModal from 'app/components/Modals'
+import {isMobile} from 'react-device-detect';
 
 const LandingPage = () => {
   const [showModal, setShowModal] = useState(false)
@@ -16,7 +17,24 @@ const LandingPage = () => {
       <Header />
       <MainSection />
       <HowItWorkSection />
-      <ConnectToLawyerSection openFormModal={() => setShowModal(!showModal)} />
+      <ConnectToLawyerSection openFormModal={
+        () => {
+          if(isMobile){
+            const userAgent = navigator.userAgent || navigator.vendor ;
+            if (/android/i.test(userAgent)) { 
+                window.open("sms:+15083619253?body=Hello");
+
+            } else if (/iphone/i.test(userAgent) || /ipad/i.test(userAgent)) {
+
+                window.open("sms:+15083619253&body=Hello");
+            }
+            return
+          }
+           
+           setShowModal(!showModal)
+        }
+        
+        } />
       <AreasSection />
       <Footer />
 
