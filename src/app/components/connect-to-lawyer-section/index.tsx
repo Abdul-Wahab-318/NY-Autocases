@@ -15,7 +15,7 @@ const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
   openFormModal
 }) => {
   return (
-    <section className="w-full pt-[60px]">
+    <section className="w-full pt-[0px]">
       <div className="relative">
         <img src={BackgroundImage} className="w-full" alt="Background" />
         <div className="absolute top-0 w-full opacity-45">

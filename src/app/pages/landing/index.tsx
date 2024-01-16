@@ -21,7 +21,7 @@ const LandingPage = () => {
       <Footer />
 
       <div
-        className="fixed bottom-[65px] right-[67px] z-50"
+        className="fixed bottom-[65px] right-[67px] z-50 invisible"
         onClick={() => setShowModal(!showModal)}
       >
         <img
