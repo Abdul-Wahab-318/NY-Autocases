@@ -20,7 +20,7 @@ const Avatar: React.FC<AvatarProps> = ({
         <span className="section-number block text-[12px] sm:text-md md:text-lg lg:text-xl xl:text-[48px]">
           {sectionNumber}
         </span>
-        <span className="section-text text-[8px] sm:text-sm md:text-sm lg:text-md xl:text-[27px]">
+        <span className="section-text text-xs sm:text-sm md:text-sm lg:text-md xl:text-[27px]">
           {sectionText}
           {sectionSubText && (
             <span style={{ fontWeight: 700 }}>{sectionSubText}</span>

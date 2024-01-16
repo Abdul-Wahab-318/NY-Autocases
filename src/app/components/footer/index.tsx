@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-y-6">
           <span className="footer-text-title text-xs sm:text-xs md:text-sm lg:text-[20px] xl:text-[20px]">
-            Important Link
+            social media
           </span>
           <div className=" flex w-20 flex-col gap-y-2 sm:w-32 md:w-52 lg:w-64 xl:w-64">
             <span className="footer-text-description text-xs sm:text-sm md:text-sm lg:text-sm xl:text-sm ">
