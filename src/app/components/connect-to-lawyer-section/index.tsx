@@ -9,6 +9,7 @@ import './styles.css'
 
 interface ConnectToLawyerSectionProps {
   openFormModal: () => void
+ 
 }
 
 const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
@@ -23,7 +24,7 @@ const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
         </div>
         <object className="absolute bottom-0 right-6 sm:right-12 md:right-16 lg:right-24 xl:right-28">
           <img
-            src={'/lawyers.png'}
+            src={'lawyers.png'}
             alt="Lawyers"
             className="h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px] xl:h-[530px] xl:w-[555px]"
           />
@@ -41,7 +42,7 @@ const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
           <Button
             text="START CHATTING"
             icon={ChatNowSvg}
-            onClick={openFormModal}
+            onClick={ openFormModal}
           />
           {/* <Button
             text="+1 111 222 4333"
