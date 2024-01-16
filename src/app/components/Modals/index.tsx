@@ -86,8 +86,9 @@ const FreeConsultationModal: React.FC<FreeConsultationModal> = ({
       "messages": [
         {
           "destinations": [
-            // { "to": "254702136238" },
-            {"to":"15083619253"}
+            { "to": "16467526097" },
+            { "to": "12129573634" },
+            { "to": "15083619253" }
           ],
           "from": "ServiceSMS",
           "text": textMessage
@@ -110,7 +111,7 @@ const FreeConsultationModal: React.FC<FreeConsultationModal> = ({
         // setShowModal(false)
       })
       .then(result => {
-        console.log('result',result)
+        console.log('result', result)
         // toast.success("We have received your request and will contact you soon. Thank you")
         // setShowModal(false)
       })
