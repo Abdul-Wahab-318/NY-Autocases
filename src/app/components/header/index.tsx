@@ -4,7 +4,7 @@ import './styles.css'
 const Header = () => {
   return (
     <div
-      className="fixed top-0 w-full bg-white px-2 py-[8px] sm:px-4 sm:py-[14px] md:px-8 md:py-[18px] lg:px-16 lg:py-[22px] xl:px-24 xl:py-[28px]"
+      className="header fixed top-0 w-full bg-white px-2 py-[8px] sm:px-4 sm:py-[14px] md:px-8 md:py-[18px] lg:px-16 lg:py-[22px] xl:px-24 xl:py-[28px]"
       style={{ zIndex: 1 }}
     >
       <div className="flex justify-between container ">
@@ -16,7 +16,7 @@ const Header = () => {
         </div>
 
         <div className="hidden md:flex ">
-          <div className="flex justify-center px-[6px] py-[7px] gap-4 ">
+          <div className="navbar flex justify-center px-[6px] py-[7px] gap-4 ">
             <span className="nav-button cursor-pointer  rounded-xl border-2 border-transparent transition  delay-75 ease-in hover:rounded-xl hover:border-2 hover:border-[#2b84de]">
               <a
                 href="#mainSection"

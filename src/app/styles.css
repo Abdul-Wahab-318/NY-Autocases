@@ -3,14 +3,24 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: unset!important;
-    font-family : 'Avenir-Regular' !important;
+    font-family : 'Avenir' !important;
 }
 
 @font-face {
-  font-family: 'Avenir-Regular';
-  src: local('Avenir-Regular'), url('./fonts/Avenir-Regular.ttf') format('opentype');
+  font-family: 'Avenir';
+  src: local('Avenir'), url('./assets/fonts/Avenir.otf') format('opentype');
 }
-
+@font-face {
+  font-family: 'Avenir-Next-Condensed';
+  src: local('Avenir-Next-Condensed'), url('./assets/fonts/Avenir-Next-Condensed.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Avenir-Next-Condensed-Medium';
+  src: local('Avenir-Next-Condensed-Medium'), url('./assets/fonts/Avenir-Next-Condensed-Medium.ttf') format('opentype');
+}
+.condensed-text {
+    font-family: 'Avenir-Condensed' , sans-serif;
+}
 h5{
     color: aliceblue
 }
