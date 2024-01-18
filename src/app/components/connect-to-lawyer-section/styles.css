@@ -4,9 +4,23 @@
   font-size: 56.501px;
   font-style: normal;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   line-height: normal;
 }
-
+#HowItWorkSection
+{
+  height: 70vh;
+  padding-top: 4rem;
+  background-color: rgba(201,224,250,1);
+  background-image: url('../../assets/svg/fgLawyerSection.svg');
+  background-size: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-repeat: no-repeat;
+}
 .button-text {
   color: #fff;
   font-family: Avenir Next;
@@ -28,10 +42,67 @@
   font-weight: 600;
   line-height: normal;
 }
+.laywer-relative{
+  height: 90%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.connect-lawer-btn
+{
+  margin: 1rem;
+  display: flex;
+  gap: 0.6rem;
+}
+.lawer-img
+{
+  display: flex;
+  align-items: end;
+}
+.lawer-img img
+{
+  height: 94%;
+}
+@media (max-width:560px)
+{
+  .lawer-img img
+{
+  height: 64%;
+}
 
-.my-image {
-  background-image: url('../../assets/svg/lawyers.png');
-  background-repeat: no-repeat;
-  background-position-x: center;
-  z-index: 999999;
+.lawer-img
+{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+#HowItWorkSection
+{
+  flex-direction: column;
+  justify-content: end;
+  background-size: cover;
+  height: 76vh;
+  padding-top: 4rem;
+}
+.laywer-relative{
+  height: 30%;
+  width: 100%;
+ 
+}
+.lawer-img img
+{
+  height: 78%;
+}
+.lawyer-section-title{
+  margin-top: 1rem;
+}
+.lawyer-section-title  h1
+{
+  margin-left: 1rem;
+  width: 90%;
+  font-size: 49px;
+}
+
+
 }

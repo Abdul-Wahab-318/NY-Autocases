@@ -1,25 +1,19 @@
-.footer-text-title {
-  color: white;
-  font-weight: 600;
-  font-family: Avenir;
+.social-flex
+{
+    display: flex;
+    gap: 0.5rem;
 }
 
-.footer-text-description {
-  color: darkgray;
-  font-family: Avenir;
+@media (max-width: 960px) {
+.img-f{
+    display:none;
 }
-
-hr {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  color: #a9a9a9;
-  border: 0;
-  border-top: 1px solid #6d6a6a;
-  padding-bottom: 20px;
+.footer-social{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
-
-.footer-copyright-text {
-  color: darkgray;
-  font-family: Avenir;
+.footer-social-heading{
+      text-align:center;
+}
 }

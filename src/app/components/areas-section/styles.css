@@ -2,6 +2,46 @@
   color: #fffcf9;
   font-family: Avenir Next;
   font-style: normal;
+  font-size: 55px;
+  margin-left: 2.5rem;
   font-weight: 600;
   line-height: normal;
 }
+#areaWeCover
+{
+  height: auto;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/svg/tire.svg");
+  background-color: #373e52;
+  background-size: 100%;
+  background-repeat: no-repeat!important;
+  background-repeat: initial;
+}
+.area-cards
+{
+  background: none;
+  display: flex;
+  margin-left: 2rem;
+}
+
+@media (max-width:500px)
+{
+  #areaWeCover
+{
+  height: 60vh;
+  
+}
+.areas-section-title {
+  margin-left: 1rem;
+}
+.area-cards{
+  overflow-x: scroll;
+  margin-left: 0;
+  width: 98%;
+padding-left: 0.4rem;
+  background: none;
+}
+
+} 

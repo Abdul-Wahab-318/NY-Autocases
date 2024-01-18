@@ -8,7 +8,7 @@ import Footer from 'app/components/footer'
 import { useState } from 'react'
 import FreeConsultationModal from 'app/components/Modals'
 import {isMobile} from 'react-device-detect';
-
+import '../../styles.css'
 const LandingPage = () => {
   const [showModal, setShowModal] = useState(false)
 

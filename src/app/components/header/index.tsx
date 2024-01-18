@@ -8,15 +8,15 @@ const Header = () => {
       style={{ zIndex: 1 }}
     >
       <div className="flex justify-between">
-        <div className="flex items-center justify-center gap-[4px] sm:gap-[12px]">
+        <div className="flex items-center justify-center gap-[4px] sm:gap-[12px]" style={{marginLeft:'5rem'}}>
           <ChatSvg />
-          <span className="hero-title cursor-pointer justify-center text-center text-xs md:text-md lg:text-lg xl:text-xl">
+          <span className="hero-title cursor-pointer logo-text justify-center text-center text-xs md:text-md lg:text-lg xl:text-xl">
             NY Auto Cases
           </span>
         </div>
 
         <div className="hidden md:flex">
-          <div className="flex justify-center gap-8 px-[6px] py-[7px] ">
+          <div className="flex justify-center px-[6px] py-[7px] ">
             <span className="nav-button cursor-pointer  rounded-xl border-2 border-transparent transition  delay-75 ease-in hover:rounded-xl hover:border-2 hover:border-[#2b84de]">
               <a
                 href="#mainSection"

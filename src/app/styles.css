@@ -1,14 +1,129 @@
-@font-face {
-  font-family: Avenir;
-  src: url(./assets/fonts/Avenir.otf);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: unset!important;
+}
+h5{
+    color: aliceblue
+}
+.video-container {
+	position: relative;
+	width: 100%;
+	height: 100vh; /* Adjust the height as needed */
+	overflow: hidden;
 }
 
-@font-face {
-  font-family: Avenir-bold;
-  src: url(./assets/fonts/Avenir-Next-Condensed.otf);
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+a{
+    /* font-family: Avenir next condensed;  */
+    font-weight: bold;
+    font-size: 22px !important;
+    text-decoration: none;
+    color: #2b84de;
+    
+}
+.nav-button{
+    line-height: normal;
+    font-weight: 600;
+    font-style:normal ;
+
+    
+}
+.hero-title{
+    font-family: bold;
+    text-decoration: none;
+    color: #2b84de;
+    font-size: 35px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: normal;
+    font-weight: 600;
+    font-style: normal;
 }
 
-@font-face {
-  font-family: Avenir Next;
-  src: url(./assets/fonts/Avenir-Next.otf);
+.section-title{
+    font-size: 55px;
+    color: #2b84de;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
+.card {
+    max-width: 18rem;
+    max-height: 20rem;
+    border: none;
+    white-space: normal; /* Added to ensure proper rendering */
+}
+
+
+.images {
+ /* height: 70vh; */
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    overflow-x: scroll !important;  /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide the scrollbar on Firefox */
+    -ms-overflow-style: none;
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+   
+
+}
+.images::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar on Chrome and Safari */
+}
+.card {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    width: 350px;
+    border-radius:20px;
+
+}
+.section-number{
+    color: #2b84de;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -.96px;
+    font-size: 55px;
+}
+.section-text {
+    color: #2782dd;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -.54px;
+    text-transform: uppercase;
+    width: 300px;
+    font-size: 27px;
+}
+@media (min-width: 960px) {
+
+   .images{
+    justify-content: center;
+    gap: 10rem;
+   }
+  }
+
+  @media (max-width: 560px) {
+
+  *{
+    scroll-behavior: smooth!important;
+}
+  }       
+
+ 
