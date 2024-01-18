@@ -11,8 +11,7 @@
 }
 #HowItWorkSection
 {
-  height: 70vh;
-  padding-top: 4rem;
+
   background-color: rgba(201,224,250,1);
   background-image: url('../../assets/svg/fgLawyerSection.svg');
   background-size: 100%;
@@ -20,6 +19,9 @@
   width: 100%;
   justify-content: space-evenly;
   background-repeat: no-repeat;
+}
+#HowItWorkSection .container > div {
+
 }
 .button-text {
   color: #fff;
@@ -43,7 +45,7 @@
   line-height: normal;
 }
 .laywer-relative{
-  height: 90%;
+    padding : 225px 0;
   width: 50%;
   display: flex;
   align-items: center;
@@ -56,12 +58,15 @@
 }
 .lawer-img
 {
-  display: flex;
-  align-items: end;
+  flex-grow : 1 ;
+  display: flex; 
+  justify-content: flex-end;
+  align-items: flex-end;
+
 }
 .lawer-img img
 {
-  height: 94%;
+  width : 540px ;
 }
 @media (max-width:560px)
 {

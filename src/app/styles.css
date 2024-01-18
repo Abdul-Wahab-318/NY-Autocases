@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: unset!important;
+    font-family : 'Avenir-Regular' !important;
 }
+
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: local('Avenir-Regular'), url('./fonts/Avenir-Regular.ttf') format('opentype');
+}
+
 h5{
     color: aliceblue
 }
@@ -71,9 +78,6 @@ a{
     gap: 1rem;
     padding: 1rem;
     margin-left: 1rem;
-    overflow-x: scroll !important;  /* Enable horizontal scrolling */
-    scrollbar-width: none; /* Hide the scrollbar on Firefox */
-    -ms-overflow-style: none;
     background-color: white;
     margin-top: 1rem;
     margin-bottom: 2rem;

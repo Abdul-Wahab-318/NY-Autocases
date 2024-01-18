@@ -124,34 +124,22 @@ const FreeConsultationModal: React.FC<FreeConsultationModal> = ({
     <>
       {/* <div className="modal-backdrop" onClick={() => setShowModal(false)}></div> */}
 
-      <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
+      <div className=" fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
         <div
           ref={modalEl}
-          className="relative mx-auto my-6 w-auto max-w-md sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-3xl "
+          className="relative mx-auto my-6 w-auto max-w-md sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-[900px] "
         >
           {/*content*/}
-          <div className="container2 relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
+          <div className="container2 modal-wrapper relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
             {/*header*/}
-            <div className="flex items-start justify-start self-start rounded-t p-5">
-              <div className="flex flex-col">
-                <h3 className="flex items-center justify-center self-center text-center text-md font-semibold sm:text-md md:text-md lg:text-lg xl:text-lg">
-                  We Will Contact You Soon
-                </h3>
-                <img
-                  src={horizentalLineSvg}
-                  style={{
-                    width: '4rem',
-                    alignSelf: 'center',
-                    paddingTop: '1rem'
-                  }}
-                />
-              </div>
+            <div className="modal-header-top">
+              <h2>Free Consultation</h2>
             </div>
 
             {/*body*/}
             <form>
               <div className="px-6">
-                <div className="relative flex flex-auto gap-5  pb-4 pt-6">
+                <div className="relative flex flex-auto gap-4  pb-4 pt-6">
                   <input
                     id="firstName"
                     placeholder="First Name"
@@ -165,7 +153,7 @@ const FreeConsultationModal: React.FC<FreeConsultationModal> = ({
                     type="text"
                   />
                 </div>
-                <div className="relative flex flex-auto gap-5 pb-4">
+                <div className="relative flex flex-auto gap-4 pb-4">
                   <input
                     id="phoneNumber"
                     placeholder="Phone Number"
@@ -179,7 +167,7 @@ const FreeConsultationModal: React.FC<FreeConsultationModal> = ({
                     className="h-[40px] w-[320px] rounded pl-4"
                   />
                 </div>
-                <div className="relative flex flex-auto gap-5  pb-4">
+                <div className="relative flex flex-auto gap-4  pb-4">
                   <input
                     id="city"
                     placeholder="City"

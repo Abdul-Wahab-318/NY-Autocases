@@ -9,13 +9,15 @@ import Card from './Card'
 
 const AreasSection = () => {
   return (
-    <section className='pb-8' id="areaWeCover">
-     <h1 className='areas-section-title mt-4 ml-4' >Areas we cover</h1>
-      <div className="area-cards mt-8">
-        <Card svg={NegligentDriverSvg} />
-        <Card svg={CollisionSvg} />
-        <Card svg={HitAndRunSvg} />
-        <Card svg={PropertyDamageSvg} />
+    <section className='pb-8 section areas-section' id="areaWeCover">
+      <div className="container">
+        <h1 className='areas-section-title mt-4 ml-0 mb-8 pb-8' >Areas we cover</h1>
+        <div className="area-cards mt-8">
+          <Card svg={NegligentDriverSvg} />
+          <Card svg={CollisionSvg} />
+          <Card svg={HitAndRunSvg} />
+          <Card svg={PropertyDamageSvg} />
+        </div>
       </div>
     </section>
   )

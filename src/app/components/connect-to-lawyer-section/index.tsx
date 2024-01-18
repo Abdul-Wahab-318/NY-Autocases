@@ -17,22 +17,26 @@ const ConnectToLawyerSection: React.FC<ConnectToLawyerSectionProps> = ({
   openFormModal
 }) => {
   return (
-    <section className="" id='HowItWorkSection'>
-      <div className="laywer-relative">
-        <div className="lawyer-section-title ">
-          <h1 className="lawyer-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-[56px]">
-            Connect to a lawyer
-          </h1>
-        <Button
-            text="START CHATTING"
-            icon={ChatNowSvg}
-            onClick={openFormModal}
-          />
+    <section className="section connect-section" id='HowItWorkSection'>
+      <div className="container">
+        <div className="flex relative">
+          <div className="laywer-relative">
+            <div className="lawyer-section-title ">
+              <h1 className="lawyer-text text-sm sm:text-md md:text-lg lg:text-xl xl:text-[56px]">
+                Connect to a lawyer
+              </h1>
+            <Button
+                text="START CHATTING"
+                icon={ChatNowSvg}
+                onClick={openFormModal}
+              />
+            </div>
+          </div>
+          <div className="lawer-img">
+            <img src={Lawer} />
+          </div>
         </div>
       </div>
-        <div className="lawer-img">
-          <img src={Lawer} />
-        </div>
     </section>
   )
 }

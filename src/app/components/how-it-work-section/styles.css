@@ -1,3 +1,24 @@
-#mainSection{
-    padding-top: 6rem;
+
+.how-it-works-cards-wrapper  {
+    display : grid !important; ;
+    grid-template-columns : 1fr 1fr 1fr ;
+}
+.how-it-works-section {
+    padding : 100px 0 ;
+}
+.how-it-works-cards-wrapper img {
+    min-height: 285px ;
+    margin-bottom : 35px ;
+
+}
+
+.floating-circle-bottom {
+    position : absolute;
+    bottom : 0 ;
+    left : 30px ;
+}
+.floating-circle-top{
+    position : absolute;
+    top : 0 ;
+    right : 25% ;
 }

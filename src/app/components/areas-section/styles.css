@@ -3,14 +3,13 @@
   font-family: Avenir Next;
   font-style: normal;
   font-size: 55px;
-  margin-left: 2.5rem;
   font-weight: 600;
   line-height: normal;
 }
 #areaWeCover
 {
   height: auto;
-  padding-top: 5rem;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   background-image: url("../../assets/svg/tire.svg");
@@ -22,8 +21,8 @@
 .area-cards
 {
   background: none;
-  display: flex;
-  margin-left: 2rem;
+  display: grid;
+  grid-template-columns : 1fr 1fr 1fr 1fr
 }
 
 @media (max-width:500px)
@@ -33,9 +32,7 @@
   height: 60vh;
   
 }
-.areas-section-title {
-  margin-left: 1rem;
-}
+
 .area-cards{
   overflow-x: scroll;
   margin-left: 0;
