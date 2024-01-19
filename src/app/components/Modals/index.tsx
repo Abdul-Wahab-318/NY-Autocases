@@ -132,8 +132,8 @@ const FreeConsultationModal: React.FC<FreeConsultationModal> = ({
           {/*content*/}
           <div className="container2 modal-wrapper relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
             {/*header*/}
-            <div className="modal-header-top">
-              <h2>Free Consultation</h2>
+            <div className="modal-header-top px-6">
+              <h2>We will contact you soon</h2>
             </div>
 
             {/*body*/}
