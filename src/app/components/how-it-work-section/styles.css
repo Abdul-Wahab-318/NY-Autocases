@@ -66,3 +66,23 @@
     font-size: 23px !important ;
   }
 }
+@media (max-width: 768px) {
+    .how-it-works-cards-wrapper {
+      display : flex !important ;
+      flex-direction: column ;
+      align-items: center ;
+    }
+    .how-it-works-cards-wrapper  div {
+      text-align: center !important ;
+    }
+      .section-title {
+        font-size: 38px !important;
+        margin-bottom: 2rem ; 
+     }
+       .section-number {
+        font-size: 32px !important ;
+    }
+    .section-text {
+        font-size: 22px !important ;
+    }
+}

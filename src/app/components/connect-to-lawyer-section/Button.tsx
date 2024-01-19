@@ -67,15 +67,15 @@ const Button: React.FC<ButtonsProps> = ({
     >
       <img
         src={icon}
-        className="h-[60px] w-[60px] cursor-pointer sm:h-[50px] sm:w-[50px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[70px] xl:w-[70px]"
+        className=" connect-lawer-btn-circle h-[60px] w-[60px] cursor-pointer sm:h-[50px] sm:w-[50px] md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px] xl:h-[70px] xl:w-[70px]"
         alt="Button Icon"
       />
       <div
-        className={`flex h-[50px] w-[170px] cursor-pointer items-center justify-center self-center rounded-full sm:h-[30px] sm:w-[140px] md:h-[40px] md:w-[180px] lg:w-[250px] xl:h-[63px] xl:w-[316px] ${isDisabled ? 'disabled' : ''}`}
+        className={`flex h-[50px] w-[170px] cursor-pointer items-center justify-center self-center rounded-full  md:h-[40px] md:w-[180px] lg:w-[250px] xl:h-[63px] xl:w-[316px] ml-3 ${isDisabled ? 'disabled' : ''}`}
         style={{ backgroundColor: backgroundColor }}
       >
         <span
-          className="button-text :text-[32px] text-[16px] sm:text-[30px] md:text-md lg:text-lg xl:text-[32px]"
+          className="button-text :text-[32px] text-[16px]  md:text-md lg:text-lg xl:text-[32px]"
           style={{ color: textColor }}
         >
           {text}
