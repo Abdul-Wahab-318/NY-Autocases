@@ -14,7 +14,7 @@ const MainSection : React.FC<ConnectToLawyerSectionProps> = ({
 }) => {
   
   React.useEffect(() => {
-    AOS.init();
+    AOS.init({once: true});
   }, [])
 
   return (
