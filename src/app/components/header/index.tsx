@@ -85,7 +85,7 @@ const Header = () => {
             </div>
           </div>
 
-          <button className="d-flex md:hidden toggle-menu" ref={buttonRef} onClick={handleToggle}><img src={menu} width={'20px'} alt="" /></button>
+          <button className="d-flex d-md-none toggle-menu" ref={buttonRef} onClick={handleToggle}><img src={menu} width={'20px'} alt="" /></button>
 
         </div>
       </div>

@@ -1,7 +1,15 @@
+import React from "react";
 import banner from "./../../assets/images/banner.png" ;
 import './styles.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MainSection = () => {
+  
+  React.useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <>
       <div className="container-fluid px-0 banner-section">
@@ -13,8 +21,8 @@ const MainSection = () => {
               <img src={banner} width={'100%'} alt="" />
               <div className="banner-content">
                 <div className="container">                  
-                <h1>Your road to justice</h1>
-                <h4>Accidents happen. Let us <br /> minmize your impact</h4>
+                <h1 data-aos={"fade-in"} data-aos-duration="1000" className="">Your road to justice</h1>
+                <h4 data-aos={"fade-in"} data-aos-duration="1000" data-aos-delay="200">Accidents happen. Let us <br /> minmize your impact</h4>
                 </div>
               </div>
             </div>

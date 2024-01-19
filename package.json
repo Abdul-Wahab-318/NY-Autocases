@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite --host" ,
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "vitest",
@@ -12,6 +12,8 @@
     "typecheck": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@types/aos": "^3.0.7",
+    "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
