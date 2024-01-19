@@ -15,18 +15,18 @@ const HowItWorkSection = () => {
       </h2>
       <div className=" how-it-works-cards-wrapper d-flex  mt-5 " style={{ height : 'auto'}}>
       
-        <div  style={{backgroundColor: 'white', marginBottom: '5rem'}} data-aos={"fade-in"} className="aos-init aos-animate">
+        <div  style={{backgroundColor: 'white', marginBottom: '5rem'}} data-aos={"fade-right"} data-aos-delay="200" className="aos-init aos-animate">
             <div id="flexcon" className="card-img-top">
                 <img src={how_it_works1} width={'250px'} alt="" />
                 <div className="  items-center justify-center"><span className="section-number">01.<br /></span><span className="section-text text-[8px] sm:text-sm md:text-sm lg:text-md xl:text-[27px]">Click<b> chat now.</b></span></div></div>
         </div>
-        <div className="" style={{backgroundColor: 'white', marginBottom: '5rem'}} data-aos={"fade-in"} data-aos-delay="300">
+        <div className="" style={{backgroundColor: 'white', marginBottom: '5rem'}} data-aos={"fade-right"} data-aos-delay="500">
             <div id="flexcon" className="card-img-top">
               <img src={how_it_works2} width={'250px'}  alt="" />
                 <div className="  items-center justify-center"><span className="section-number block text-[12px] sm:text-md md:text-lg lg:text-xl xl:text-[48px]">02. <br /></span><span className="section-text text-[8px] sm:text-sm md:text-sm lg:text-md xl:text-[27px]">Choose the area of law.</span></div></div>
 
         </div>
-        <div className="" style={{backgroundColor: 'white', marginBottom: '5rem'}} data-aos={"fade-in"} data-aos-delay="600">
+        <div className="" style={{backgroundColor: 'white', marginBottom: '5rem'}} data-aos={"fade-right"} data-aos-delay="800">
             <div id="flexcon" className="card-img-top">
               <img src={how_it_works3} width={'250px'}  alt="" />
               <div className="  items-center justify-center"><p className="section-number block text-[12px] sm:text-md md:text-lg lg:text-xl xl:text-[48px]">03. <br /></p><span className="section-text text-[8px] sm:text-sm md:text-sm lg:text-md xl:text-[27px]">Get connected to a lawyer.</span></div></div>

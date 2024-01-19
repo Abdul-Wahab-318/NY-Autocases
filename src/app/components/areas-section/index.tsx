@@ -13,10 +13,10 @@ const AreasSection = () => {
       <div className="container">
         <h1 className='areas-section-title mt-4 ml-0 mb-8 pb-8' >Areas we cover</h1>
         <div className="area-cards mt-8">
-          <Card svg={NegligentDriverSvg} />
-          <Card svg={CollisionSvg} />
-          <Card svg={HitAndRunSvg} />
-          <Card svg={PropertyDamageSvg} />
+          <Card svg={NegligentDriverSvg} data_aos='zoom-in' data_delay='200' />
+          <Card svg={CollisionSvg}  data_aos='zoom-in' data_delay='400' />
+          <Card svg={HitAndRunSvg}  data_aos='zoom-in' data_delay='600'/>
+          <Card svg={PropertyDamageSvg}  data_aos='zoom-in' data_delay='800' />
         </div>
       </div>
     </section>
