@@ -4,7 +4,14 @@ import './styles.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const MainSection = () => {
+interface ConnectToLawyerSectionProps {
+  openFormModal: () => void
+ 
+}
+
+const MainSection : React.FC<ConnectToLawyerSectionProps> = ({
+  openFormModal
+}) => {
   
   React.useEffect(() => {
     AOS.init();
@@ -23,6 +30,7 @@ const MainSection = () => {
                 <div className="container">                  
                 <h1 data-aos={"fade-in"} data-aos-duration="1000" className="">Your road to justice</h1>
                 <h4 data-aos={"fade-in"} data-aos-duration="1000" data-aos-delay="200">Accidents happen. Let us <br /> minmize your impact</h4>
+                <button className="cta-btn d-block d-md-none rounded-pill py-3 px-4  mt-5" onClick={openFormModal}>Contact Us</button>
                 </div>
               </div>
             </div>

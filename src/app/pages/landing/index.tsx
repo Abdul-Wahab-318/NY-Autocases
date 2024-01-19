@@ -15,7 +15,26 @@ const LandingPage = () => {
   return (
     <div>
       <Header />
-      <MainSection />
+      <MainSection  openFormModal={
+        () => {
+          if(isMobile){
+            // var address="//open?addresses=+16467526097,+12129573634"
+            var address="+16467526097"
+            const userAgent = navigator.userAgent || navigator.vendor ;
+            if (/android/i.test(userAgent)) { 
+                window.open(`sms:${address}?body=Hello`);
+
+            } else if (/iphone/i.test(userAgent) || /ipad/i.test(userAgent)) {
+
+                window.open(`sms:${address}&body=Hello`);
+            }
+            return
+          }
+           
+           setShowModal(!showModal)
+        }
+        
+        }/>
       <HowItWorkSection />
       <ConnectToLawyerSection openFormModal={
         () => {

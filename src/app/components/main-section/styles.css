@@ -46,7 +46,17 @@ font-weight : 700 ;
   font-size : 30px ;
 font-weight : 700 ;
 }
-
+.cta-btn {
+  border : 3px solid rgb(44, 133, 222) ;
+  background-color :white ;
+  color : rgb(44, 133, 222) ;
+  font-weight : bold  ;
+  transition : all 300ms ease ;
+}
+.cta-btn:hover {
+    background-color :rgb(44, 133, 222) ;
+    color : white ;
+}
 @media (max-width: 1280px) {
     .container {
         padding-inline : 70px ;
