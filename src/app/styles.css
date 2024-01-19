@@ -18,6 +18,9 @@
   font-family: 'Avenir-Next-Condensed-Medium';
   src: local('Avenir-Next-Condensed-Medium'), url('./assets/fonts/Avenir-Next-Condensed-Medium.ttf') format('opentype');
 }
+.container {
+    padding-inline :  30px  ; 
+}
 .condensed-text {
     font-family: 'Avenir-Condensed' , sans-serif;
 }
@@ -43,7 +46,7 @@ video {
 a{
     /* font-family: Avenir next condensed;  */
     font-weight: bold;
-    font-size: 22px !important;
+    font-size: 22px ;
     text-decoration: none;
     color: #2b84de;
     
@@ -59,7 +62,7 @@ a{
     font-family: bold;
     text-decoration: none;
     color: #2b84de;
-    font-size: 35px !important;
+    font-size: 35px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: normal;
     font-weight: 600;
@@ -140,4 +143,14 @@ a{
 }
   }       
 
- 
+@media (min-width: 1280px) {
+    .container {
+        padding-inline : 70px ;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        padding-inline : 30px ;
+    }
+}

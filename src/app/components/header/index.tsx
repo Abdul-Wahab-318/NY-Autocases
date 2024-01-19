@@ -25,11 +25,11 @@ const Header = () => {
         </div>
 
         <div className="hidden md:flex ">
-          <div className="navbar flex justify-center px-[6px] py-[7px] gap-4 ">
+          <div className="navbar flex justify-center px-[6px] py-[7px] gap-4 flex-nowrap ">
             <span className="nav-button cursor-pointer  rounded-xl border-2 border-transparent transition  delay-75 ease-in hover:rounded-xl hover:border-2 hover:border-[#2b84de]">
               <a
                 href="#mainSection"
-                className="px-2 md:text-sm lg:text-md
+                className="px-2    
                 
                 xl:text-lg"
               >
@@ -39,7 +39,7 @@ const Header = () => {
             <span className="nav-button cursor-pointer  rounded-xl border-2 border-transparent transition  delay-75 ease-in hover:rounded-xl hover:border-2 hover:border-[#2b84de]">
               <a
                 href="#HowItWorkSection"
-                className="px-2 md:text-sm lg:text-md 
+                className="px-2     
                 
                 xl:text-lg"
               >
@@ -49,7 +49,7 @@ const Header = () => {
             <span className="nav-button cursor-pointer  rounded-xl border-2 border-transparent transition  delay-75 ease-in hover:rounded-xl hover:border-2 hover:border-[#2b84de]">
               <a
                 href="#areaWeCover"
-                className="px-2 md:text-sm lg:text-md
+                className="px-2    
                 
                 xl:text-lg"
               >

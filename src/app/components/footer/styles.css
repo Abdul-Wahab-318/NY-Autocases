@@ -17,3 +17,15 @@
       text-align:center;
 }
 }
+
+@media (max-width: 1024px){
+    .footer-row  {
+        display : flex ;
+        justify-content: space-between;
+    }
+
+    .footer-row > div{
+        width: 33%;
+        margin-inline: 0;
+    }
+}

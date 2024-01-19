@@ -12,7 +12,7 @@ const Footer = () => {
       >
         <section>
           <div className="container text-center text-md-start pt-[80px]">
-            <div className="row mt-3 mb-5">
+            <div className="footer-row row mt-3 mb-5">
               <div className="col-md-3 col-lg-4 col-xl-4 mb-4">
                 <h5 className="text-uppercase fw-bold mb-4">
                   About Us

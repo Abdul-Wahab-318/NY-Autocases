@@ -59,6 +59,7 @@
 .lawer-img
 {
   flex-grow : 1 ;
+
   display: flex; 
   justify-content: flex-end;
   align-items: flex-end;
@@ -110,4 +111,30 @@
 }
 
 
+}
+
+@media (max-width: 1280px) {
+  .laywer-relative {
+    padding : 130px 0 ;
+  }
+  .lawyer-text {
+    font-size: 45px ; 
+  }
+  .lawer-img img {
+    width: 340px;
+}
+}
+
+@media (max-width: 1024px)
+{
+  .connect-section .container div .laywer-relative {
+    width: 100%; 
+    justify-content: center;
+  }
+  .connect-lawer-btn {
+    justify-content: center;
+  }
+  .connect-section .container div .lawer-img {
+    display  : none  !important; 
+  }
 }
