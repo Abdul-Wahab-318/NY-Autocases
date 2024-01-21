@@ -5,14 +5,13 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import dns from 'dns'
 dns.setDefaultResultOrder('verbatim')
 
-// https://vitejs.dev/config https://vitest.dev/config
 export default defineConfig({
-  base: '/nycases-auto-2',
+  base: '/', // Set the base path here
   plugins: [react(), tsconfigPaths()],
   test: {
     globals: true,
     environment: 'happy-dom',
     setupFiles: '.vitest/setup',
     include: ['**/test.{ts,tsx}'],
-  }
-})
+  },
+});
