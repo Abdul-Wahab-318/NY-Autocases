@@ -1,0 +1,119 @@
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-banner-overlay {
+  position: absolute;
+  inset : 0 ; 
+  background-color : #2B84DE ; 
+  opacity : 0.3; 
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-title {
+  color: #fbfcfe;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.banner-text {
+  display: block;
+  color: #fbfcfe;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nav-button-sm {
+  color: white;
+  font-family: Avenir Next Condensed;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: flex-start;
+}
+.banner-container img{
+  width : 100% ;
+  height : 100vh ;
+  object-fit: cover ;
+}
+.banner-content {
+  position: absolute;
+  left : 0px ;
+  right : 0px ;
+  top : 300px ;
+}
+.banner-content .container h1 {
+color : white ;
+font-size : 80px ;
+font-weight : 700 ;
+}
+.banner-content .container h4 {
+  margin-top : 10px ;
+  color : white ;
+  text-transform : uppercase ;
+  font-size : 22px ;
+font-weight : 700 ;
+}
+.cta-btn {
+  border : 3px solid rgb(44, 133, 222) ;
+  background-color :white ;
+  color : rgb(44, 133, 222) ;
+  font-weight : bold  ;
+  transition : all 300ms ease ;
+  min-width : 250px ;
+}
+.cta-btn:hover {
+    background-color :rgb(44, 133, 222) ;
+    color : white ;
+}
+@media (max-width: 1280px) {
+    .container {
+        padding-inline : 70px ;
+    }
+    .banner-content {
+    top: 200px;
+    }
+  .banner-content .container h1 {
+      font-size: 70px;
+  }
+  .banner-content .container h4 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1024px)
+{
+    .banner-content {
+    top: 150px;
+    }
+  .banner-content .container h1 {
+      font-size: 55px;
+  }
+  .banner-content .container h4 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 786px)
+{
+  .banner-content .container h4 {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 380px)
+{
+  .cta-btn {
+    min-width : auto ;
+  }
+
+}

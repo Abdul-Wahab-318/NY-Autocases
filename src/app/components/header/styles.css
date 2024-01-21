@@ -1,0 +1,96 @@
+.navbar a{
+
+    font-size : 23px ;
+    font-family: 'Avenir Next Condensed' , sans-serif !important; 
+    font-weight : light ;
+}
+.navbar {
+   
+}
+.header .container {
+   padding-right : 0px; 
+}
+
+/* ---- HEADER MOBILE ---- */
+.header-mobile {
+    position: fixed;
+    top: 0;
+    bottom: -300px;
+    left: 0;
+    z-index: 30;
+    width: 310px;
+    background-color: white;
+    box-shadow: 2px 1px 14px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 1px 14px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 1px 14px -5px rgba(0,0,0,0.75);
+    transition: all 300ms ease;
+}
+
+.header-mobile-show {
+    transform: translateX(0%);
+}
+.header-mobile-hide {
+    transform: translateX(-110%);
+}
+.header-mobile .mobile-logo-wrapper {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+.header-mobile-nav a {
+    padding  : 10px 0 ;
+}
+.logo-wrapper svg {
+    width :34px ;
+    height :34px ;
+}
+.toggle-menu {
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 8px 20px rgb(0 0 0/6%);
+    height: 50px;
+    outline: none!important;
+    width: 50px;
+}
+/* ---- HEADER MOBILE ---- */
+
+
+.header {
+    box-shadow : 0 8px 20px rgb(0 0 0/6%) ; 
+}
+
+@media (max-width: 1280px) {
+    .nav-button a{
+        font-size: 19px !important; 
+    }
+}
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 24px !important ;
+    }
+        .navbar {
+        gap : 5px  !important; 
+    }
+    .nav-button a{
+        font-size: 15px !important; 
+    }
+}
+@media (max-width: 900px) {
+    .navbar {
+        gap : 5px  !important; 
+    }
+    .nav-button a{
+        font-size: 14px !important; 
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        padding-block: 20px ;
+    }
+    .header svg {
+        width : 35px !important ;
+        height : 35px !important ;
+    }
+}

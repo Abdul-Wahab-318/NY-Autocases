@@ -1,0 +1,96 @@
+.areas-section-title {
+  color: #fffcf9;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: normal;
+}
+#areaWeCover
+{
+  height: auto;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/svg/tire.svg");
+  background-color: #373e52;
+  background-size: 100%;
+  background-repeat: no-repeat!important;
+  background-repeat: initial;
+}
+.area-cards
+{
+  background: none;
+  display: grid;
+  grid-template-columns : 1fr 1fr 1fr 1fr
+}
+
+@media (max-width:500px)
+{
+  #areaWeCover
+{
+  height: 60vh;
+  
+}
+
+.area-cards{
+  overflow-x: scroll;
+  margin-left: 0;
+  width: 98%;
+padding-left: 0.4rem;
+  background: none;
+}
+
+} 
+
+
+
+@media (max-width: 1280px) {
+  .areas-section-title{
+    font-size: 45px ; 
+    margin-top : 0  !important; 
+  }
+
+}
+@media (min-width: 643px) and (max-width: 768px) {
+    .area-cards img {
+    max-width : 270px  !important; 
+  } 
+}
+
+
+@media (max-width: 768px) {
+    .areas-section-title{
+    font-size: 38px ; 
+  }
+  /*.area-cards {
+    display : grid ; 
+    grid-template-columns : 1fr 1fr ;
+  }*/
+
+  .area-cards {
+    display : flex ; 
+    overflow-x: auto;
+    width: 100%;
+  }
+  .area-cards::-webkit-scrollbar {
+    display : none !important;
+  }
+  .area-cards img {
+    flex: 0 0 auto;
+    max-width: 100%  ;
+    padding : 0 10px ; 
+  } 
+  .areas-section .container {
+    padding-inline : 0 !important;
+    max-width : 100% !important ;
+    margin-inline  : 0 !important ;
+  }
+  .areas-section-title {
+    padding-inline : 20px ;
+  }
+
+
+
+}
+
