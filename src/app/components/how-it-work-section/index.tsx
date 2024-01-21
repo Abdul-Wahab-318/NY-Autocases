@@ -13,7 +13,7 @@ const HowItWorkSection = () => {
       <div className="">
         <h2 className="section-title">How does it work?</h2>
         <div
-          className=" how-it-works-cards-wrapper how-it-works-cards-wrapper-display   mt-5 "
+          className=" how-it-works-cards-wrapper how-it-works-cards-wrapper-display   mt-3 "
           style={{ height: 'auto' }}
         >
           <div
