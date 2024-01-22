@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family : 'Avenir' !important;
-    scroll-margin : 25px ;
+    scroll-margin : 30px ;
 }
 
 @font-face {
@@ -116,7 +116,7 @@ a{
     font-weight: 700;
     line-height: normal;
     letter-spacing: -.96px;
-    font-size: 55px;
+    font-size: 45px;
 }
 .section-text {
     color: #2782dd;
@@ -127,7 +127,7 @@ a{
     letter-spacing: -.54px;
     text-transform: uppercase;
     width: 300px;
-    font-size: 27px;
+    font-size: 24px;
 }
 @media (min-width: 960px) {
 
@@ -148,6 +148,17 @@ a{
     .container {
         padding-inline : 70px ;
     }
+}
+
+@media (min-width: 1281px) and (max-width: 1536px){
+    .section-number{
+
+    font-size: 42px;
+}
+.section-text {
+
+    font-size: 22px;
+}
 }
 
 @media (max-width: 1280px) {

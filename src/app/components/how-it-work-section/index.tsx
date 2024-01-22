@@ -100,7 +100,7 @@ const HowItWorkSection = () => {
                   02. <br />
                 </p>
                 <span className="section-text text-[8px] sm:text-sm md:text-sm lg:text-md xl:text-[27px]">
-                  Lawyer reaches out to you
+                  Talk to the lawyer
                 </span>
               </div>
             </div>
