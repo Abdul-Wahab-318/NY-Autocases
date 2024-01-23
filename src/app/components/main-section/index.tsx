@@ -4,6 +4,7 @@ import './styles.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import video from "./video.mp4"
+import video_mobile from "./video-mobile.mp4"
 
 interface ConnectToLawyerSectionProps {
   openFormModal: () => void
@@ -28,12 +29,13 @@ const MainSection : React.FC<ConnectToLawyerSectionProps> = ({
             <div className="banner-container">
               {/* <img src={banner} width={'100%'} alt="" /> */}
               <div className="video-banner">
-                <video autoPlay loop muted className="d-none d-md-block">
+                <video autoPlay playsInline loop muted className="d-none d-md-block">
                   <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                <video autoPlay loop muted className="d-block d-md-none">
-                  <source src={video} type="video/mp4" />
+                {/* below is mobile video */}
+                <video autoPlay playsInline loop muted className="d-block d-md-none">
+                  <source src={video_mobile} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="video-banner-overlay"></div>
