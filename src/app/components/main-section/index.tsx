@@ -3,7 +3,7 @@ import banner from "./../../assets/images/banner.png" ;
 import './styles.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import video from "./video-2.mp4"
+import video from "./video.mp4"
 
 interface ConnectToLawyerSectionProps {
   openFormModal: () => void
@@ -28,7 +28,11 @@ const MainSection : React.FC<ConnectToLawyerSectionProps> = ({
             <div className="banner-container">
               {/* <img src={banner} width={'100%'} alt="" /> */}
               <div className="video-banner">
-                <video autoPlay loop muted>
+                <video autoPlay loop muted className="d-none d-md-block">
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <video autoPlay loop muted className="d-block d-md-none">
                   <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
