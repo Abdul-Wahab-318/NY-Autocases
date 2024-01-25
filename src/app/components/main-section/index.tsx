@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import banner from "./../../assets/images/banner.png" ;
 import './styles.css'
 import AOS from 'aos';
@@ -15,6 +15,13 @@ const MainSection : React.FC<ConnectToLawyerSectionProps> = ({
   openFormModal
 }) => {
   
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+  const handleVideoLoad = () => {
+    console.log("loaded video")
+    setVideoLoaded(true);
+  };
+
   React.useEffect(() => {
     AOS.init({once: true });
   }, [])
@@ -22,22 +29,20 @@ const MainSection : React.FC<ConnectToLawyerSectionProps> = ({
   return (
     <>
       <section className="container-fluid px-0 banner-section">
-
+        {
+          videoLoaded ? <></> : <div className="loader"> <h1 className="text-white fs-1">Loading ...</h1></div> 
+        }
         <div className="row gx-0">
 
           <div className="position-relative">
             <div className="banner-container">
               {/* <img src={banner} width={'100%'} alt="" /> */}
               <div className="video-banner">
-                <video autoPlay playsInline loop muted className="d-none d-md-block">
+                <video autoPlay playsInline loop muted className="d-none d-md-block" onLoadedData={handleVideoLoad}>
                   <source src={video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 {/* below is mobile video */}
-                <video autoPlay playsInline loop muted className="d-block d-md-none">
-                  <source src={video_mobile} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
                 <div className="video-banner-overlay"></div>
               </div>
               <div className="banner-content">
